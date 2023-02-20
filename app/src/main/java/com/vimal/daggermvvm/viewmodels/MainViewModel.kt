@@ -1,3 +1,6 @@
+/**
+ * Created by Vimal on Feb-2023.
+ */
 package com.vimal.daggermvvm.viewmodels
 
 import androidx.lifecycle.LiveData
@@ -9,7 +12,6 @@ import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.delay
 import kotlinx.coroutines.launch
 import javax.inject.Inject
-
 @HiltViewModel
 class MainViewModel @Inject constructor(private val repository: ProductRepository) : ViewModel() {
 
@@ -18,7 +20,7 @@ class MainViewModel @Inject constructor(private val repository: ProductRepositor
 
     init {
         viewModelScope.launch {
-            delay(10000)
+            delay(2000)
             repository.getProducts()
         }
     }

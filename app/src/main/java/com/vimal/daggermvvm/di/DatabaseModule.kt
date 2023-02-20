@@ -1,3 +1,6 @@
+/**
+ * Created by Vimal on Feb-2023.
+ */
 package com.vimal.daggermvvm.di
 
 import android.content.Context
@@ -9,7 +12,6 @@ import dagger.hilt.InstallIn
 import dagger.hilt.android.qualifiers.ApplicationContext
 import dagger.hilt.components.SingletonComponent
 import javax.inject.Singleton
-
 @InstallIn(SingletonComponent::class)
 @Module
 class DatabaseModule {

@@ -1,8 +1,10 @@
+/**
+ * Created by Vimal on Feb-2023.
+ */
 package com.vimal.daggermvvm.models
 
 import androidx.room.Entity
 import androidx.room.PrimaryKey
-
 @Entity
 data class Product(
     val category: String,
